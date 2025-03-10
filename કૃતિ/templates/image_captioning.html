@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Captioning</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/image_captioning.css') }}">
+</head>
+<body>
+
+    {% include 'includes/navbar.html' %}
+
+    <div class="content">
+        <h1>Image Captioning</h1>
+        <p>Upload an image to generate captions using AI.</p>
+        <input type="file">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<nav class="navbar">
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+            <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+
+        </a>
+        <ul class="nav-links">
+            <li><a href="/">Dashboard</a></li>
+            <li><a href="/image-captioning">Image Captioning</a></li>
+            <li><a href="/object-detection">Object Detection</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>

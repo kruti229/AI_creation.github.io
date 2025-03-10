@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    {% include 'includes/navbar.html' %}
+
+    <div class="dashboard-container">
+        <h1>Welcome to Your AI Dashboard</h1>
+        <p>Select a tool below:</p>
+
+        <div class="ai-tools">
+            <!-- Image Captioning Tab -->
+            <a href="/image-captioning" class="tool-card">
+                <img src="{{ url_for('static', filename='images/image_captioning_preview.png') }}" alt="Image Captioning">
+                <p class="tool-title">Image Captioning</p>
+            </a>
+
+            <!-- Object Detection Tab -->
+            <a href="/object-detection" class="tool-card">
+                <img src="{{ url_for('static', filename='images/object_detection_preview.png') }}" alt="Object Detection">
+                <p class="tool-title">Object Detection</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
